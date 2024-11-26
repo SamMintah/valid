@@ -396,9 +396,30 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
               2024 DataValidator. All rights reserved.
             </p>
             <div className="flex space-x-4">
-              <Twitter className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-              <Github className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+              <a
+                href="https://x.com/kweku__mintah"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <Twitter className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+              </a>
+              <a
+                href="https://github.com/SamMintah"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <Github className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/samuel-mintah-software-engineer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+              </a>
             </div>
           </div>
         </div>
