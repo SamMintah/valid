@@ -204,7 +204,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
               <div className="relative">
                 <div className="relative rounded-lg border bg-card p-4 shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                    src="https://res.cloudinary.com/ds98aq9ei/image/upload/v1732642054/Macbook-Air-ai-data-validation-tool.vercel.app_dootuc.png"
                     alt="Dashboard Preview"
                     className="rounded-lg"
                   />
