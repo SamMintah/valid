@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Play, Pause, Square } from 'lucide-react';
+import { Pause, Square } from 'lucide-react';
 
 export default function TrainingStatus() {
   return (

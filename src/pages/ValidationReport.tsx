@@ -24,7 +24,7 @@ import {
 } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import { Download, FileJson, FileText, Search } from 'lucide-react';
+import { FileJson, FileText, Search } from 'lucide-react';
 
 const metrics = [
   {

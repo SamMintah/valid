@@ -3,16 +3,13 @@ import {
   ArrowRight,
   Bot,
   CheckCircle2,
-  Code2,
   FileCheck,
   Github,
   LineChart,
   Linkedin,
   Lock,
-  Mail,
   Settings2,
   Twitter,
-  Wand2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {

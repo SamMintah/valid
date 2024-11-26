@@ -67,6 +67,7 @@ export default function DataSourceSettings() {
     try {
       setIsValidating(true);
       // Simulate API call
+      console.log(values);
       await new Promise((resolve) => setTimeout(resolve, 2000));
       toast.success('Data source configuration saved successfully');
     } catch (error) {

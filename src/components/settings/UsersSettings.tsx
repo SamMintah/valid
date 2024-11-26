@@ -39,6 +39,12 @@ export default function UsersSettings() {
   const [users, setUsers] = useState(initialUsers);
   const [isAddUserOpen, setIsAddUserOpen] = useState(false);
 
+  const handleDeleteUser = (userId: string) => {
+    setUsers(users.filter((user) => user.id !== userId));
+  };
+
+  console.log(handleDeleteUser)
+  
   return (
     <div className="space-y-6">
       <div className="flex justify-between">

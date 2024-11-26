@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -38,7 +37,7 @@ export default function GeneralSettings() {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  const onSubmit = async () => {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));

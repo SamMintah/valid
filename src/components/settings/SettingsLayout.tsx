@@ -11,6 +11,7 @@ import {
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { type SettingsTab } from '@/pages/Settings';
 
 const navigation = [
   { name: 'General', icon: Settings },
@@ -25,8 +26,8 @@ const navigation = [
 
 interface SettingsLayoutProps {
   children: React.ReactNode;
-  activeTab: string;
-  onTabChange: (tab: string) => void;
+  activeTab: SettingsTab;
+  onTabChange: (tab: SettingsTab) => void;
 }
 
 export default function SettingsLayout({

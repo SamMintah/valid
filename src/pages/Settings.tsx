@@ -9,7 +9,7 @@ import WebhooksSettings from '@/components/settings/WebhooksSettings';
 import NotificationsSettings from '@/components/settings/NotificationsSettings';
 import EmailSettings from '@/components/settings/EmailSettings';
 
-type SettingsTab =
+export type SettingsTab =
   | 'General'
   | 'Users'
   | 'Security'

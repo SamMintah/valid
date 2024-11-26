@@ -34,6 +34,7 @@ export default function AddUserDialog({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle user creation
+    console.log(role)
     onOpenChange(false);
   };
 

@@ -2,9 +2,7 @@ import { useState } from 'react';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
@@ -33,7 +31,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Key, Plus, Search } from 'lucide-react';
+import { Plus, Search } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface ApiKey {

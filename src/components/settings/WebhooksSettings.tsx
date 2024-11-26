@@ -2,9 +2,6 @@ import { useState } from 'react';
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
@@ -27,7 +24,7 @@ import {
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Plus, Webhook } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface WebhookConfig {
@@ -106,6 +103,7 @@ export default function WebhooksSettings() {
   const testWebhook = async (webhook: WebhookConfig) => {
     try {
       // Simulate webhook test
+      console.log(webhook);
       await new Promise((resolve) => setTimeout(resolve, 1000));
       toast.success('Webhook tested successfully');
     } catch (error) {
