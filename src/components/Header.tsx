@@ -1,4 +1,4 @@
-import { Menu, Moon, Sun } from 'lucide-react';
+import { FileCheck, Menu, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -28,7 +28,10 @@ export default function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
         <span className="sr-only">Toggle sidebar</span>
       </Button>
       <div className="flex-1">
-        <h1 className="text-xl font-semibold">AI Data Validation Dashboard</h1>
+      <div className="flex items-center space-x-2">
+            <FileCheck className="h-6 w-6 text-primary" />
+            <span className="text-xl font-bold">valid ai</span>
+        </div>
       </div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>

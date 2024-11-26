@@ -158,7 +158,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center space-x-2">
             <FileCheck className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">DataValidator</span>
+            <span className="text-xl font-bold">valid ai</span>
           </div>
           <nav className="hidden space-x-6 md:flex">
             <a href="#features" className="text-muted-foreground hover:text-foreground">
@@ -204,7 +204,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
               <div className="relative">
                 <div className="relative rounded-lg border bg-card p-4 shadow-2xl">
                   <img
-                    src="https://res.cloudinary.com/ds98aq9ei/image/upload/v1732642054/Macbook-Air-ai-data-validation-tool.vercel.app_dootuc.png"
+                    src="https://res.cloudinary.com/ds98aq9ei/image/upload/v1732655701/Macbook-Air-localhost_rkpltl.png"
                     alt="Dashboard Preview"
                     className="rounded-lg"
                   />
