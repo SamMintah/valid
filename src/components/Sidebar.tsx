@@ -5,25 +5,32 @@ import {
   Home,
   Settings,
   Sparkles,
+  ClipboardCheck,
+  ScrollText,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import type { Page } from '@/App';
 
 interface SidebarProps {
   open: boolean;
+  currentPage: Page;
+  onNavigate: (page: Page) => void;
 }
 
 const navigation = [
-  { name: 'Dashboard', href: '#', icon: Home },
-  { name: 'Validation Rules', href: '#', icon: FileText },
-  { name: 'Validation Logs', href: '#', icon: BarChart3 },
-  { name: 'AI Model Training', href: '#', icon: Sparkles },
-  { name: 'System Settings', href: '#', icon: Settings },
-  { name: 'Documentation', href: '#', icon: BookOpen },
+  { name: 'Dashboard', page: 'dashboard' as const, icon: Home },
+  { name: 'Validation Rules', page: 'rules' as const, icon: FileText },
+  { name: 'Validation Report', page: 'report' as const, icon: ScrollText },
+  { name: 'Manual Review', page: 'review' as const, icon: ClipboardCheck },
+  { name: 'Validation Logs', page: 'logs' as const, icon: BarChart3 },
+  { name: 'AI Model Training', page: 'training' as const, icon: Sparkles },
+  { name: 'System Settings', page: 'settings' as const, icon: Settings },
+  { name: 'Documentation', page: 'docs' as const, icon: BookOpen },
 ];
 
-export default function Sidebar({ open }: SidebarProps) {
+export default function Sidebar({ open, currentPage, onNavigate }: SidebarProps) {
   return (
     <div
       className={cn(
@@ -36,11 +43,13 @@ export default function Sidebar({ open }: SidebarProps) {
           {navigation.map((item) => (
             <Button
               key={item.name}
-              variant="ghost"
+              variant={currentPage === item.page ? 'secondary' : 'ghost'}
               className={cn(
                 'w-full justify-start',
-                !open && 'justify-center px-0'
+                !open && 'justify-center px-0',
+                currentPage === item.page && 'bg-secondary'
               )}
+              onClick={() => onNavigate(item.page)}
             >
               <item.icon className="mr-2 h-5 w-5" />
               {open && <span>{item.name}</span>}
