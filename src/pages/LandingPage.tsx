@@ -358,7 +358,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
             <div>
               <div className="flex items-center space-x-2">
                 <FileCheck className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold">DataValidator</span>
+                <span className="text-xl font-bold">valid ai</span>
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
                 AI-powered data validation for modern teams
